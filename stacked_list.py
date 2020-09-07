@@ -54,7 +54,7 @@ class stackedlist:
         current_node=self.head
         while current_node.next !=None:
             current_node=current_node.next 
-        print(current_node.data)
+        return current_node.data
 
     #empty check
     def is_empty(self):
