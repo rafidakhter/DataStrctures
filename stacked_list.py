@@ -5,6 +5,7 @@ class node:
         self.previous=None
 
 class stackedlist:
+    #last in first out
 
     def __init__(self):
         self.head=node()

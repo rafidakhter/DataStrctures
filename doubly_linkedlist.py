@@ -28,7 +28,7 @@ class linkedlist:
             current_node=current_node.next 
         return counter
 
-    #get element of a given index
+    #get all element
     def getallelements(self):
 
         current_node=self.head
@@ -103,31 +103,4 @@ class linkedlist:
 
     #displays all the elements in the linkedlist in an array
     def display(self):
-        print(self.getallelements())
-
-my_list=linkedlist()
-my_list.append(1)
-my_list.append(2)
-my_list.append(3)
-my_list.append(4)
-
-a=my_list.getallelements()
-print(f'print all elements = {a}')
-print('testing display function')
-my_list.display()
-b=my_list.get(2)
-print(f'testing get function at  2nd index = {b}')
-my_list.erase(2)
-print(f'Erased 2nd index')
-my_list.display()
-my_list.insert(3,1)
-print(f'inserted 3 at 1st index')
-my_list.display()
-my_list.erase(2)
-print(f'Erased 2nd index')
-my_list.insert(2,1)
-print(f'inserted 2 at 1st index')
-my_list.display()
-
-print(my_list[0])
-
+        print(self.getallelements())\
