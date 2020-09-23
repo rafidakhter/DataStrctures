@@ -11,7 +11,7 @@ class linkedlist:
     #adds an element to the linked list:
     def append(self,data):
         newnode=node(data)
-        current_node=self.head
+        current_node=self.head 
         while current_node.next != None:
             current_node=current_node.next
         current_node.next=newnode
@@ -45,7 +45,7 @@ class linkedlist:
             return None
         current_node=self.head
         counter=0
-        while True:
+        while True: 
             current_node=current_node.next
             if counter==index:
                 return current_node.data
@@ -87,8 +87,8 @@ class linkedlist:
                 return
             counter+=1
 	# Allows for bracket operator syntax (i.e. a[0] to return first item).
-	def __getitem__(self,index):
-		return self.get(index)
+    def __getitem__(self,index):
+        return self.get(index)
 
 
     #displays all the elements in the linkedlist in an array

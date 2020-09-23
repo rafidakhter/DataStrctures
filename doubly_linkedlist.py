@@ -9,7 +9,7 @@ class linkedlist:
     def __init__(self):
         self.head=node()
     
-    #adds an element to the linked list:
+    #adds an element to the linked list:c 
     def append(self,data):
         newnode=node(data)
         current_node=self.head
